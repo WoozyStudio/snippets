@@ -1,0 +1,152 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	
+	"Discord.js SlashCommand": {
+		 	"prefix": "slashcommand",
+		 	"body": [
+		 		"const { SlashCommandBuilder, ChatInputCommandInteraction, Client } = require('discord.js');"
+				""
+				"module.exports = {"
+				"    data: new SlashCommandBuilder()"
+				"        .setName(\"$0\")"
+				"        .setDescription(\"\"),"
+				"    /**"
+				"     *"
+				"     * @param {ChatInputCommandInteraction} interaction "
+				"     * @param {Client} client "
+				"     */"
+				"    async execute(interaction, client) {"
+				"        //code"
+				"    }"
+				"}"
+		 	],
+		 	"description": "Discord.js SlashCommand"
+		},
+
+	"Discord.js SubCommand": {
+		 	"prefix": "subcommand",
+		 	"body": [
+		 		".addSubcommand(subcommand => subcommand"
+				"    .setName(\"$0\")"
+				"    .setDescription(\"\")"
+				"),"
+		 	],
+		 	"description": "Discord.js SubCommand"
+		},
+
+	"Discord.js SubCommandGroup": {
+		 	"prefix": "subcommandgroup",
+		 	"body": [
+		 		".addSubcommandGroup(group => group"
+				"    .setName(\"$0\")"
+				"    .setDescription(\"\")"
+				"    .addSubcommand(subcommand => subcommand"
+				"        .setName(\"\")"
+				"        .setDescription(\"\")"
+				"    )"
+				"),"
+		 	],
+		 	"description": "Discord.js SubCommandGroup"
+		},
+
+	"Discord.js StringOption": {
+		 	"prefix": "addstringoption",
+		 	"body": [
+		 		".addStringOption(option => option.setName('$0').setDescription('').setRequired()),"
+		 	],
+		 	"description": "Discord.js StringOption"
+		},
+
+	"Discord.js UserOption": {
+		 	"prefix": "adduseroption",
+		 	"body": [
+		 		".addUserOption(option => option.setName('$0').setDescription('').setRequired()),"
+		 	],
+		 	"description": "Discord.js UserOption"
+		},
+
+	"Discord.js RoleOption": {
+		 	"prefix": "addroleoption",
+		 	"body": [
+		 		".addRoleOption(option => option.setName('$0').setDescription('').setRequired()),"
+		 	],
+		 	"description": "Discord.js RoleOption"
+		},
+
+	"Discord.js ChannelOption": {
+		 	"prefix": "addchanneloption",
+		 	"body": [
+		 		".addChannelOption(option => option.setName('$0').setDescription('').setRequired().addChannelTypes(ChannelType.)),"
+		 	],
+		 	"description": "Discord.js ChannelOption"
+		},
+
+	"Discord.js BooleanOption": {
+		 	"prefix": "addbooleanoption",
+		 	"body": [
+		 		".addBooleanOption(option => option.setName('$0').setDescription('').setRequired()),"
+		 	],
+		 	"description": "Discord.js BooleanOption"
+		},
+
+	"Discord.js StringChoices": {
+		 	"prefix": "addstringchoices",
+		 	"body": [
+				".addStringOption(option => option"
+				"    .setName('$0')"
+				"    .setDescription('')"
+				"    .setRequired()"
+				"    .addChoices("
+				"        { name: '', value: '' },"
+				"    )"
+				"),"
+			],
+		 	"description": "Discord.js StringChoices"
+		},
+
+	"Discord.js Choices": {
+		 	"prefix": "addchoices",
+		 	"body": [
+				".addChoices("
+				"    { name: '$0', value: '' },"
+				"),"
+			],
+		 	"description": "Discord.js Choices"
+		},
+
+	"Discord.js Choice": {
+		 	"prefix": "addchoice",
+		 	"body": [
+				"{ name: '$0', value: '' },"
+			],
+		 	"description": "Discord.js Choices"
+		},
+
+
+
+	//Autocompletator
+
+	"Discord.js AutoCompletator Interaction": {
+		"prefix": "autocompletator",
+		"body": [
+			"/**"
+			" *"
+			" * @param {ChatInputCommandInteraction} interaction "
+			" * @param {Client} client "
+			"*/"
+	   ],
+		"description": "Discord.js AutoCompletator Interaction"
+   },
+}
