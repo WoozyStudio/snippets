@@ -35,6 +35,28 @@
 		 	"description": "Discord.js SlashCommand"
 		},
 
+	"Discord.js Component": {
+		 	"prefix": "component",
+		 	"body": [
+		 		"const { ChatInputCommandInteraction, Client } = require('discord.js');"
+				""
+				"module.exports = {"
+				"    data: {"
+				"        name: \"\""
+				"    },"
+				"    /**"
+				"     *"
+				"     * @param {ChatInputCommandInteraction} interaction "
+				"     * @param {Client} client "
+				"     */"
+				"    async execute(interaction, client) {"
+				"        //code"
+				"    }"
+				"}"
+		 	],
+		 	"description": "Discord.js Component"
+		},
+
 	"Discord.js SubCommand": {
 		 	"prefix": "subcommand",
 		 	"body": [
